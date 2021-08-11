@@ -43,7 +43,7 @@ import org.testng.annotations.*;
 public class ModifyAssociationTest {
 
 	private static final String SERVER_NAME = "testserver";
-	private static final String SERVER_HOST = "127.0.0.1";
+	private static final String SERVER_HOST = "127.0.0.10";
     private static final int SERVER_PORT1 = 12354;
     private static final int SERVER_PORT2 = 12355;
     private static final int SERVER_PORT3 = 12356;
@@ -52,7 +52,7 @@ public class ModifyAssociationTest {
 	private static final String SERVER_ASSOCIATION_NAME = "serverAsscoiation";
 	private static final String CLIENT_ASSOCIATION_NAME = "clientAsscoiation";
 
-	private static final String CLIENT_HOST = "127.0.0.1";
+	private static final String CLIENT_HOST = "127.0.0.10";
     private static final int CLIENT_PORT1 = 12364;
     private static final int CLIENT_PORT2 = 12365;
     private static final int CLIENT_PORT3 = 12366;
@@ -100,7 +100,7 @@ public class ModifyAssociationTest {
 		this.management = new ManagementImpl("ClientAssociationTest");
 		this.management.setSingleThread(true);
 		this.management.start();
-        this.management.setConnectDelay(1000);
+                this.management.setConnectDelay(1000);
 		this.management.removeAllResourses();
 
 		this.server = this.management.addServer(SERVER_NAME, SERVER_HOST, serverPort, ipChannelType, false, 0, null);
