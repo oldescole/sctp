@@ -9,10 +9,10 @@
 		</groups>
 
 		<packages>
-			<package name="org.mobicents.protocols.sctp" />
-			<package name="org.mobicents.protocols.sctp.multihome" />
-			<package name="org.mobicents.protocols.sctp.netty" />
-			<package name="org.mobicents.protocols.sctp.multihome" />
+			<package name="su.sres.sur.sctp" />
+			<package name="su.sres.sur.sctp.multihome" />
+			<package name="su.sres.sur.sctp.netty" />
+			<package name="su.sres.sur.sctp.multihome" />
 		</packages>
 	</test>
 </suite>

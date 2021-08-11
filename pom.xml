@@ -1,27 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.mobicents</groupId>
-		<artifactId>restcomm-parent</artifactId>
-		<version>2.27.32</version>
-	</parent>
-
-	<groupId>org.mobicents.protocols.sctp</groupId>
+	<groupId>su.sres.sur.sctp</groupId>
 	<artifactId>sctp-parent</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
-	<name>Restcomm :: SCTP :: Parent :: ${pom.artifactId}</name>
+	<version>2.0.1</version>	
 	<packaging>pom</packaging>
 
 
 	<properties>
-		<log4j.version>1.2.8</log4j.version>
-		<javolution.version>5.5.1</javolution.version>
+		<log4j.version>1.2.17</log4j.version>
+		<javolution.version>6.0.0</javolution.version>
+		<junit.version>4.13.2</junit.version>
 		<commons.version>1.0.0.CR1</commons.version>
-		<testng.version>6.2</testng.version>
-		<netty.version>4.0.33.Final</netty.version>
-		<compiler.plugin.version>2.0.2</compiler.plugin.version>
-		<compile.source>1.7</compile.source>
+		<testng.version>7.4.0</testng.version>
+		<netty.version>4.1.66.Final</netty.version>
+		<compiler.plugin.version>3.8.0</compiler.plugin.version>
+		<compile.source>11</compile.source>
 
 	</properties>
 	<modules>
@@ -103,7 +97,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
-						<version>2.1.2</version>
+						<version>3.2.1</version>
 						<executions>
 							<execution>
 								<id>attach-sources</id>
@@ -118,30 +112,6 @@
 			</build>
 		</profile>
 	</profiles>
-	<developers>
-		<developer>
-			<id>serg.vetyutnev</id>
-			<name>Sergey</name>
-			<email>serg.vetyutnev@gmail.com</email>
-			<organization>TeleStax</organization>
-			<organizationUrl>http://telestax.com/</organizationUrl>
-			<roles>
-				<role>Active Developer</role>
-			</roles>
-			<timezone>+3</timezone>
-		</developer>
-		<developer>
-			<id>amit.bhayani</id>
-			<name>Amit Bhayani</name>
-			<email>amit.bhayani@gmail.com</email>
-			<organization>TeleStax</organization>
-			<organizationUrl>http://telestax.com/</organizationUrl>
-			<roles>
-				<role>Active Developer</role>
-			</roles>
-			<timezone>+5.5</timezone>
-		</developer>
-	</developers>
 	<licenses>
 		<license>
 			<name>GNU LESSER GENERAL PUBLIC LICENSE</name>
@@ -155,7 +125,7 @@
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<groupId>org.mobicents.tools</groupId>
 				<version>
-					${restcomm.tools.mavenplugin.eclipse.version}
+					1.0.1.FINAL
 				</version>
 				<inherited>false</inherited>
 				<executions />
